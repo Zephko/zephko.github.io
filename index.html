@@ -356,6 +356,7 @@
                          large-scale, fully autonomous saiboat, named Raye. The goal was for Raye to compete in the Vic-Maui Yacht Race, a 2300 nautical mile long yacht race that runs from Victoria, BC to Maui, Hawaii.
                          Raye was to be the first fully autonomous vessel to participate in the race. The 2020 Vic-Maui Yacht Race was cancelled due to COVID-19 so we are still uncertain when Raye will compete.
                         <br/>
+                        <br/>
                         I have been working on the Motion Planning Software Team. We have been building a system that will chart a course and interface with the controller being developed by our other software subteam.
 
                       </p>
@@ -375,17 +376,36 @@
 
                 <div class="row mt-5">
                   <div class="col-lg-6 align-self-center mx-auto">
-                    <h6 class="text-left align-self-center">Motion Planning</h6>
-                    <p class="text-left">
+                    <h4 class="text-center align-self-center">Motion Planning</h4>
+                    <p class="text-center">
                       Path planning for a sailboat has its own unique challenges. At first glance it may seem like you could simply draw a straight line from Victoria to Maui.
                       However, there are some major challenges that our system takes into account.
-                      
                     </p>
-                  </div>
-                  <div class="col-lg-4 mx-auto">
-                    <img class = "img-fluid" src="img/.png" alt="">
-                  </div>
                 </div>
+
+                <div class="row mt-5">
+                    <h6 class="text-left align-self-center">1. Collision Avoidance</h6>
+                    <div class="col-lg-4 mx-auto">
+                      <img class = "img-fluid" src="img/.png" alt="">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <h6 class="text-left align-self-center">2. Wind Conditions</h6>
+                    <div class="col-lg-4 mx-auto">
+                      <img class = "img-fluid" src="img/.png" alt="">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <h6 class="text-left align-self-center">3. Minimize Path Length</h6>
+                    <div class="col-lg-4 mx-auto">
+                      <img class = "img-fluid" src="img/.png" alt="">
+                    </div>
+                </div>
+                
+                <p class="text-center">
+                  To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
+                  The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction, nearby obstacles, and 
+                </p>
 
                 <div class="row mt-5">
                   <div class="col-lg-6 align-self-center mx-auto">
