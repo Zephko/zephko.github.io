@@ -41,7 +41,7 @@
                         <!-- <h1 class="text-uppercase text-white font-weight-bold">Your Favorite Source of Free Bootstrap Themes</h1> -->
                         <h2 class="text-center mt-0 text-white">Zephaniah Ko</h2>
                         <hr class="divider my-4" />
-                        <p class="text-white-75 font-weight-light mb-5">Engineering Physics Student | Software/Hardware Engineer | Robotics Engineer</p>
+                        <!-- <p class="text-white-75 font-weight-light mb-5">Engineering Physics Student | Software/Hardware Engineer | Robotics Engineer</p> -->
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 font-weight-light mb-5"></p>
@@ -96,11 +96,11 @@
                         <i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="img/portfolio/thumbnails/pcb.jpg" alt="">
+                    <img class="img-fluid" src="img/portfolio/thumbnails/FCpcb.jpg" alt="">
                     </a>
                     <div class="portfolio-caption border border-white border-top-0">
-                    <h4>New Design Team</h4>
-                    <p class="text-muted">PCB Design for ...
+                    <h4>Base 11 Space Challenge</h4>
+                    <p class="text-muted">Designing and testing PCBs for flight critical electronics in UBC Rocket's rocket launch to space.
                     </p>
                     </div>
                 </div>
@@ -224,12 +224,18 @@
                 <div class="col-lg-8 mx-auto">
                   <div class="modal-body">
                     <!-- Project Details Go Here -->
-                    <h2 class="text-uppercase">Project name</h2>
-                    <p class="item-intro text-muted">Intro text/p>
+                    <h2 class="text-uppercase">Base 11 Space Challenge</h2>
+                    <p class="item-intro text-muted">Designing and testing PCBs for flight critical electronics in UBC Rocket's rocket launch to space.</p>
                     <p>
                     <h4 class="text-left">The Context</h4>
                     <p class=" text-left mb-3 mt-2">
-
+                    The Base 11 Space Challenge offers a $1M dollar prize to the first student-led team to design, build, and launch a liquid fueled rocket to space.
+                    UBC Rocket's Whistler-Blackomb Rocket is attempting to be the winner of this challenge. Our dedicated team meets several times weekly and we are hoping
+                     to launch by December 2021. 
+                     <br/>
+                     I am on the Avionics and GNC(Guidance, Navigation and Control) Team. The Whistler-Blackomb space-shot rocket avionics is a redundant system capable of
+                      tracking position over time, sequencing the recovery system, detecting apogee, ground and flight termination, fueling, engine control, data acquisition, and ground
+                       station communication.
                     </p>
                     <h4 class="text-left mt-5 mb-3">The Project</h4>
                     <dl class="row">
@@ -249,14 +255,37 @@
 
               <div class="row mt-5">
                 <div class="col-lg-6 align-self-center mx-auto">
-                  <h6 class="text-left align-self-center">The World</h6>
+                  <h6 class="text-left align-self-center">Flight Computer - Data Acquisition and Apogee Detection</h6>
                   <p class="text-left">
-                    Left side text
+                    I co-designed the Flight Computer PCB which does all the on-board computing on an NXP MK66 32 bit MCU and handles all critical and non-critical tasks
+                    such as fueling, apogee detection, recovery deployment, data acquisition, and engine control. This board acquires essential data directly from our GPS, IMU, and 
+                    our battery management system. This board also uses CAN to receive pressure transducer and thermocouple data from our custom CAN module PCBs located in various parts of our rocket
+                    . The board also has an ethernet interface to a Labjack DAQ module which we are hoping will be replaced by our CAN system. We use a combination of buck converters and 
+                    linear regulators to regulate 24V to 5V and 3V3.
                   </p>
                 </div>
-                <div class="col-lg-4 mx-auto">
-                  <img class = "img-fluid" src="img/.png" alt="">
-                </div>
+              </div>
+
+
+              <p class="text-center">
+                Here is the PCB layout which I designed. The first 3 picture are the 1st, 3rd, and 4th layers of the board. The fourth picture is the 3D model. The fifth picture is the
+                manufactured version.
+              </p>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/portfolio/pcblayer1.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/portfolio/pcblayer3.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/portfolio/pcblayer4.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/portfolio/thumbnails/FCpcb.jpg" alt="">
+              </div>
+              <!-- Real board picture -->
+              <div class="col-lg-4 mx-auto">
+                <img class = "img-fluid" src="img/portfolio/thumbnails/.jpg" alt="">
               </div>
 
               <div class="row mt-5">
@@ -311,12 +340,12 @@
                       <p>
                       <h4 class="text-left">The Context</h4>
                       <p class=" text-left mb-3 mt-2">                        
-                          Every year the UBC Engineering Physics program runs a course in instrumentation design and holds a robotics competition
-                          Sixteen groups of four students design are tasked to design mechanical, electrical, and software systems to complete a series of tasks.
-                          For more details about the competition and our design including circuit schematics, source code, and videos. Visit the website I designed below:
+                          Every year the UBC Engineering Physics program runs a course in instrumentation design and holds a robotics competition.
+                          Sixteen groups of four students design are tasked to design mechanical, electrical, and software systems for an autonomous robot
+                          to complete a series of tasks and score the maximum number of points.
                   
                       </p>
-                      <a href="https://zephko.github.io/enph-253-robot/">Full Robot Details</a>
+                      <a href="https://zephko.github.io/enph-253-robot/">Full Robot Details including circuit schematics, source code, videos</a>
 
                     </div>
                   </div>
