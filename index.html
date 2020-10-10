@@ -393,7 +393,7 @@
                   </div>
                 </div>
               
-                <div class="row mt-5">
+                <!-- <div class="row mt-5">
                   <div class="col-lg-6 align-self-center mx-auto">
                     <h4 class="text-center align-self-center">Motion Planning</h4>
                     <p class="text-center">
@@ -401,33 +401,64 @@
                       However, there are some major challenges that our system takes into account.
                     </p>
                   </div>
+                </div> -->
+
+                <div class="row mt-5">
+                  <!-- <div class="col-lg-6 align-self-center mx-auto"> -->
+                  <!-- <div class="col-lg-6 mx-auto"> -->
+                    <h6 class="text-left ">Motion Planning</h6>
+                    <!-- <p class="text-left"> -->
+                    <p class=" text-left mb-3 mt-2">
+                      Path planning for a sailboat has its own unique challenges. At first glance it may seem like you could simply draw a straight line from Victoria to Maui.
+                      However, there are some major challenges that our system takes into account.
+                    </p>
+                  <!-- </div> -->
                 </div>
+  
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">1. Collision Avoidance</h6>
+                    <div class="col-lg-6 align-self-center lead">
+                      <p>There are hundreds of boats moving around the Pacific Ocean at any given time. Our pathfinding needs to find a safe path by taking into account the location, heading, and speed of all these boats. </p>
+                    </div>
                     <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/.png" alt="">
+                      <img class = "img-fluid" src="img/portfolio/vicToMaui.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">2. Wind Conditions</h6>
                     <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/.png" alt="">
+                      <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                      <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">3. Minimize Path Length</h6>
                     <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/.png" alt="">
+                      <img class = "img-fluid" src="img/portfolio/RRTstar.gif" alt="">
                     </div>
+                  <p class="text-center">
+                    To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
+                    The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction, nearby obstacles, and 
+                  </p>
                 </div>
                 
-                <p class="text-center">
-                  To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
-                  The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction, nearby obstacles, and 
-                </p>
+                <div class="row mt-5">
+                  <h6 class="text-left align-self-center">Local Path Visualizer</h6>
+                  <div class="col-lg-6 align-self-center lead">
+                    <p>One of my main contributions to the team was working on the local path visulizer which is built using matplotlib. The visualizer subscribes to our different topics in the 
+                      ROS network and displays the current global/local waypoints, wind direction, nearby obstacles, and the current path. The visualizer constantly updates and is capable of being sped up
+                      so we can quickly test pathfinding scenarios.
+                    </p>
+                  </div>
+                  <div class="col-lg-4 mx-auto">
+                    <img class = "img-fluid" src="img/portfolio/local_path_visualizer.png" alt="">
+                  </div>
+                </div>
 
                 <div class="row mt-5">
                   <div class="col-lg-6 align-self-center mx-auto">
@@ -483,7 +514,7 @@
                       <p class=" text-left mb-3 mt-2">
 
                       </p>
-                      <!-- <h4 class="text-left mt-5 mb-3">The Project</h4>
+                      <h4 class="text-left mt-5 mb-3">The Project</h4>
                       <dl class="row">
                         <dt class="col-sm-3">Key Skills</dt>
                         <dd class="col-sm-9">list, skills, here</dd>
@@ -493,7 +524,7 @@
                       <p class="text-left mt-3"> 
                         Link to more detailed website or report
                       </p>
-                      <a href="Files/" download>Report or website link</a> -->
+                      <a href="Files/" download>Report or website link</a>
 
                     </div>
                   </div>
