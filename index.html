@@ -384,9 +384,8 @@
                         <dt class="col-sm-3">Key Skills</dt>
                         <dd class="col-sm-9">Python (numpy, matplotlib, unittest), Open Motion Planning Library, ROS, Linux, Git, CI</dd>
                       </dl>
-                      <p class="text-left mt-3"> 
-                        If you like, you can visit UBC Sailbot's website for more details about the team.
-                      </p>
+
+                      <a href="https://github.com/UBCSailbot/local-pathfinding">View source code</a>
                       <a href="https://www.ubcsailbot.org/" >UBC Sailbot Design Team</a>
 
                     </div>
@@ -421,20 +420,21 @@
                     <div class="col-lg-6 align-self-center lead">
                       <p>There are hundreds of boats moving around the Pacific Ocean at any given time. Our pathfinding needs to find a safe path by taking into account the location, heading, and speed of all these boats. </p>
                     </div>
-                    <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/portfolio/vicToMaui.jpg" alt="">
-                    </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                  <img class = "img-fluid" src="img/portfolio/vicToMaui.jpg" alt="">
                 </div>
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">2. Wind Conditions</h6>
-                    <div class="col-lg-4 mx-auto">
+                    <!-- <div class="col-lg-4 mx-auto">
                       <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
-                    </div>
+                    </div> -->
                     <div class="col-lg-4 mx-auto">
                       <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
                     </div>
                 </div>
+                <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">3. Minimize Path Length</h6>
@@ -449,12 +449,13 @@
                 
                 <div class="row mt-5">
                   <h6 class="text-left align-self-center">Local Path Visualizer</h6>
-                  <div class="col-lg-6 align-self-center lead">
                     <p>One of my main contributions to the team was working on the local path visulizer which is built using matplotlib. The visualizer subscribes to our different topics in the 
                       ROS network and displays the current global/local waypoints, wind direction, nearby obstacles, and the current path. The visualizer constantly updates and is capable of being sped up
                       so we can quickly test pathfinding scenarios.
                     </p>
-                  </div>
+                </div>
+
+                <div class="row mt-5">
                   <div class="col-lg-4 mx-auto">
                     <img class = "img-fluid" src="img/portfolio/local_path_visualizer.png" alt="">
                   </div>
