@@ -67,7 +67,8 @@
             </p>
             <p class="text-muted mb-4">
               Through multi-disciplinary studies, personal projects, and experience with student design teams, I have had the opportunity to work on many interesting projects.
-              Most of my projects have either an electrical or software focus. I am particularly passionate about robotics and AI.
+              I am mostly focused on electrical hardware and software with a special interest in robotics, AI, and aerospace.
+              
               Feel free to contact me at any time. I am always happy to chat about any of my projects and answer any questions you may have.
             </p>
             
@@ -282,22 +283,30 @@
               <p class="text-center">
                 Here are some of the key schematics for the FC:
               </p>
+
               <p class="text-center">
                 Microcontroller (NXP MK66 32-bit)
               </p>
+              <figure>
               <img class = "img-fluid" src="img/portfolio/mcu.jpg" alt="">
-              <p class="text-center">
-                Power Regulation 
-              </p>
+                <figcaption>Microcontroller (NXP MK66 32-bit)<figcaption>
+                
+              </figure>
+
+              <figure>
               <img class = "img-fluid" src="img/portfolio/mcupower.jpg" alt="">
-              <p class="text-center">
-                CAN
-              </p>
+                <figcaption>Power Regulation<figcaption>
+              </figure>
+
+              <figure>
               <img class = "img-fluid" src="img/portfolio/CAN.jpg" alt="">
-              <p class="text-center">
-                Radio
-              </p>
+                <figcaption>CAN<figcaption>
+              </figure>
+
+              <figure>
               <img class = "img-fluid" src="img/portfolio/radio.jpg" alt="">
+                <figcaption>Radio<figcaption>
+              </figure>
 
               <ul class="list-inline">
                 <li>Last Updated: Oct 2020</li>
@@ -306,6 +315,18 @@
                 <i class="fas fa-times"></i>
                 Close Project</button>
             </div>
+
+            <div class="row mt-5">
+                <h6 class="text-left ">Reaction Control System PCB</h6>
+                <!-- <p class="text-left"> -->
+                <p class=" text-left mb-3 mt-2">
+                  I am fully responsible for the whole design process of our Reaction Control System(RCS) PCB including component selection, schematic capture, and layout. The RCS
+                  is designed to control the roll of the rocket by activating cold gas thrusters using solenoid valves. This is accomplished by implementing a feedback loop using an NXP 
+                  microcontroller which reads the angular velocity from an IMU and opens the gas thruster valves using a high side switch. Design files and pictures will be uploaded here 
+                  later in the design process!
+                </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -333,15 +354,29 @@
                           Every year the UBC Engineering Physics program runs a course in instrumentation design and holds a robotics competition.
                           Sixteen groups of four students design are tasked to design mechanical, electrical, and software systems for an autonomous robot
                           to complete a series of tasks and score the maximum number of points.
-                  
+
+                          This year we made autonomous recycling robots. Check out the full website I made using the link below.
                       </p>
+
                       <a href="https://zephko.github.io/enph-253-robot/">Full Robot Details including circuit schematics, source code, videos</a>
+
+                      <p class=" text-left mb-3 mt-2">                        
+                        Here are some of the interesting circuits we designed for this competition.
+                      </p>
+
+                      <figure>
+                      <img class = "img-fluid" src="img/portfolio/hbridgeSchematic.jpg" alt="">
+                        <figcaption>H bridge circuit drawn using Altium.<figcaption>
+                      </figure>
+                      <img class = "img-fluid" src="img/portfolio/irDetectSchematic.jpg" alt="">
+                        <figcaption>IR Frequency Detection circuit powered by a single 9V battery which amplifies a 1kHz IR pulse, filters high frequencies, and steps voltage down to 3V3 for our microcontroller.</figcaption>
+                      </figure>
 
                     </div>
                   </div>
                 </div>
                 <ul class="list-inline">
-                  <li>Last Updated: Sept, 2020</li>
+                  <li>Last Updated: Oct 2020</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
@@ -373,7 +408,7 @@
                       <p class=" text-left mb-3 mt-2">
                         UBC Sailbot is an engineering design team that strives to design reliable autonomous sailboats. Since I have been on the team, UBC Sailbot has been focused on building their second
                          large-scale, fully autonomous saiboat, named Raye. The goal was for Raye to compete in the Vic-Maui Yacht Race, a 2300 nautical mile long yacht race that runs from Victoria, BC to Maui, Hawaii.
-                         Raye was to be the first fully autonomous vessel to participate in the race. The 2020 Vic-Maui Yacht Race was cancelled due to COVID-19 so we are still uncertain when Raye will compete.
+                         Raye was to be the first fully autonomous vessel to participate in the race. The 2020 Vic-Maui Yacht Race was cancelled due to COVID-19 so we are now aiming for a launch in the summer of 2021.
                         <br/>
                         <br/>
                         I have been working on the Motion Planning Software Team. We have been building a system that will chart a course and interface with the controller being developed by our other software subteam.
@@ -408,18 +443,15 @@
                     <h6 class="text-left ">Motion Planning</h6>
                     <!-- <p class="text-left"> -->
                     <p class=" text-left mb-3 mt-2">
+                      Our control system works by having two separate pathfinding modules, an onshore server, and a controller connected using a ROS network. 
+                      Our global pathfinding module receives GPS and weather data from our onshore server and generates a global path that is sent to our local pathfinding module.
+                      Our local pathfinding module connects our global waypoints and avoids nearby obstacles while adapting to changing wind conditions.
+
                       Path planning for a sailboat has its own unique challenges. At first glance it may seem like you could simply draw a straight line from Victoria to Maui.
-                      However, there are some major challenges that our system takes into account.
+                      However, there are some major challenges that our system takes into account:
                     </p>
                   <!-- </div> -->
                 </div>
-
-                <p class="text-center">
-                  Path planning for a sailboat has its own unique challenges. The solution is much more complicated them drawing a straight line from Victoria to Maui. We face several key challenges.
-                  To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
-                  The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction and nearby obstacles.
-                </p>
-  
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">1. Collision Avoidance</h6>
@@ -430,13 +462,20 @@
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">2. Wind Conditions</h6>
                 </div>
-                <p>Our sailboat relies on sufficient wind speeds to allow us to move. On a global pathfinding scale our path must stay in areas with optimal wind conditions. </p>
+                <p>Our sailboat relies on sufficient wind speeds to allow us to move. On a global pathfinding scale our path must stay in areas with optimal wind conditions. With constantly changing wind Conditions
+                  this can be difficult. </p>
+                <figure>
                 <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
-                <p>On a local pathfinding scale, our boat must always avoid sailing upwind or downwind. To move towards a destination that lies upwind or downwind, we try to always move at 45 degrees from the upwind direction 
-                  and use tacking maneuvers.
+                  <figcaption>A sample of varying wind conditions between Victoria, BC (white) and Maui (black)</figcaption>
+                </figure>
+                <p>On a local pathfinding scale, our boat must always avoid sailing upwind or downwind. To move towards a destination that lies upwind or downwind, we try to always move at 30 degrees from the upwind direction 
+                  and use tacking(zig-zag) maneuvers.
                   To do this we set the cost of travelling in an upwind or downwind direction to be very high. 
                 </p> 
-                <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
+                <figure>
+                  <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
+                  <figcaption>Left figure shows the no-go zones for a given wind direction. Right figure shows optimal paths based from start to goal depending on wind conditions. </figcaption>
+                </figure>
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">3. Minimize Path Length</h6>
@@ -449,6 +488,10 @@
                   <figcaption>A visualization of the RRT* algorithm. </figcaption>
                 </figure>
 
+                <p>Since ideally our sailboat has to adjust its path the minimum amount of times, much of my contribution was focused on making validity checking functions that take into account 
+                  the predicted location of boats in the future by extrapolating them in our state space based on the boats' heading and speed.
+                </p>
+
                 <div class="row mt-5">
                   <h6 class="text-left align-self-center">Local Path Visualizer</h6>
                     <p>One of my main contributions to the team was working on the local path visulizer which is built using matplotlib. The visualizer subscribes to our different topics in the 
@@ -457,11 +500,10 @@
                     </p>
                 </div>
 
-                <div class="row mt-5">
-                  <div class="col-lg-4 mx-auto">
-                    <img class = "img-fluid" src="img/portfolio/local_path_visualizer.png" alt="">
-                  </div>
-                </div>
+                <figure>
+                  <img class = "img-fluid" src="img/portfolio/local_path_visualizer.png" alt="">
+                  <figcaption>Our local path visualizer showing a path to avoid upwind sailing, avoid obstacles, and minimize length.</figcaption>
+                </figure>
 
                 <ul class="list-inline">
                   <li>Last Updated: Oct 2020</li>
