@@ -413,40 +413,42 @@
                     </p>
                   <!-- </div> -->
                 </div>
+
+                <p class="text-center">
+                  Path planning for a sailboat has its own unique challenges. The solution is much more complicated them drawing a straight line from Victoria to Maui. We face several key challenges.
+                  To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
+                  The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction and nearby obstacles.
+                </p>
   
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">1. Collision Avoidance</h6>
-                    <div class="col-lg-6 align-self-center lead">
                       <p>There are hundreds of boats moving around the Pacific Ocean at any given time. Our pathfinding needs to find a safe path by taking into account the location, heading, and speed of all these boats. </p>
-                    </div>
                 </div>
-                <div class="col-lg-4 mx-auto">
-                  <img class = "img-fluid" src="img/portfolio/vicToMaui.jpg" alt="">
-                </div>
+                <img class = "img-fluid" src="img/portfolio/vicToMaui.jpg" alt="">
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">2. Wind Conditions</h6>
-                    <!-- <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
-                    </div> -->
-                    <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
-                    </div>
                 </div>
+                <p>Our sailboat relies on sufficient wind speeds to allow us to move. On a global pathfinding scale our path must stay in areas with optimal wind conditions. </p>
                 <img class = "img-fluid" src="img/portfolio/windy.jpg" alt="">
+                <p>On a local pathfinding scale, our boat must always avoid sailing upwind or downwind. To move towards a destination that lies upwind or downwind, we try to always move at 45 degrees from the upwind direction 
+                  and use tacking maneuvers.
+                  To do this we set the cost of travelling in an upwind or downwind direction to be very high. 
+                </p> 
+                <img class = "img-fluid" src="img/portfolio/tacking.jpg" alt="">
 
                 <div class="row mt-5">
                     <h6 class="text-left align-self-center">3. Minimize Path Length</h6>
-                    <div class="col-lg-4 mx-auto">
-                      <img class = "img-fluid" src="img/portfolio/RRTstar.gif" alt="">
-                    </div>
-                  <p class="text-center">
-                    To tackle this problem, we divided our pathfinding into two separate pathfinding problems. The first is a global pathdfinding algorithm that charts a series of waypoints from BC to Hawaii, attempting to minimize path length while staying in areas with high winds.
-                    The second is a local pathfinding algorithm that connects our global waypoints and takes into account more real time factors like the current wind direction, nearby obstacles, and 
-                  </p>
                 </div>
-                
+                <p>Our local pathfinding system uses the RRT* (Rapidly-exploring random tree) algorithm. This algorithm works by growing a tree from the start point. Every iteration the algorithm chooses a random point 
+                  in the search space, checks its validity, and attempts to connect it to the nearest point on the tree.
+                </p>
+                <figure>
+                  <img class = "img-fluid" src="img/portfolio/RRTstar.gif" alt="">
+                  <figcaption>A visualization of the RRT* algorithm. </figcaption>
+                </figure>
+
                 <div class="row mt-5">
                   <h6 class="text-left align-self-center">Local Path Visualizer</h6>
                     <p>One of my main contributions to the team was working on the local path visulizer which is built using matplotlib. The visualizer subscribes to our different topics in the 
@@ -461,29 +463,8 @@
                   </div>
                 </div>
 
-                <div class="row mt-5">
-                  <div class="col-lg-6 align-self-center mx-auto">
-                    <h6 class="text-left align-self-center">more left side text</h6>
-                    <p class="text-left">
-                          stuff
-                    </p>
-                  </div>
-                  <div class="col-lg-4 mx-auto">
-                    <img class = "img-fluid" src="img/.png" alt="">
-                  </div>
-                </div>
-
-                <div class="row mt-4">
-                  <div class="col-lg-5 align-self-center mx-auto">
-                    <img class="img-fluid" src="img/.jpg" alt="">
-                  </div>
-                  <div class="col-lg-7 align-self-center">
-                    <img class="img-fluid" src="img/.png" alt="">
-                  </div>
-                </div>
-
                 <ul class="list-inline">
-                  <li>Last Updated: Sept, 2020</li>
+                  <li>Last Updated: Oct 2020</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
