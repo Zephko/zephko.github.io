@@ -72,7 +72,7 @@
               Feel free to contact me at any time.
             </p>
             
-            <a href="resume/Zephaniah_Ko_Resume_Oct2020.pdf" download>Zephaniah Ko - Resume Oct 2020</a>
+            <a href="resume/Zephaniah_Ko_Resume.pdf" download>Zephaniah Ko - Resume Oct 2020</a>
             
           </div>
         </div>
@@ -237,7 +237,7 @@
                      <br/>
                      <br/>
                      I am on the Avionics and GNC(Guidance, Navigation and Control) Team. The Whistler-Blackomb space-shot rocket avionics is a redundant system capable of
-                      tracking position over time, sequencing the recovery system, detecting apogee, ground and flight termination, fueling, engine control, data acquisition, and ground
+                      tracking position over time, sequencing the recovery system, detecting apogee, ground and flight termination, data acquisition, and ground
                        station communication.
                     </p>
                   </div>
@@ -254,7 +254,7 @@
                     such as fueling, apogee detection, recovery deployment, data acquisition, and engine control. This board acquires essential data directly from our GPS, IMU, and 
                     our battery management system. This board also uses CAN to receive pressure transducer and thermocouple data from our custom CAN module PCBs located in various parts of our rocket
                     . The board also has an ethernet interface to a Labjack DAQ module which we are hoping will be replaced by our CAN system. We use a combination of buck converters and 
-                    linear regulators to regulate 24V to 5V and 3V3.
+                    linear regulators to regulate a Li-ion power source into 24V, 5V, and 3V3.
                   </p>
                 <!-- </div> -->
               </div>
@@ -423,7 +423,7 @@
                 </div>
               </div>
 
-              <a href="https://zephko.github.io/enph-253-robot/">Full Robot Details including circuit schematics, source code, videos</a>
+              <a href="https://zephko.github.io/enph-253-robot/">Full Robot Details including circuit schematics, source code, videos</a><br/>
 
               <p class="text-center">
                   Here are some of the interesting circuits I designed for the robot.
@@ -487,7 +487,7 @@
                         <dd class="col-sm-9">Python (numpy, matplotlib, unittest), Open Motion Planning Library, ROS, Linux, Git, CI</dd>
                       </dl>
 
-                      <a href="https://github.com/UBCSailbot/local-pathfinding">View source code</a><br/>
+                      <a href="https://github.com/UBCSailbot/local-pathfinding">View source code</a><br/><br/>
                       <a href="https://www.ubcsailbot.org/" >UBC Sailbot Design Team</a>
 
                     </div>
@@ -513,7 +513,7 @@
                       Our control system works by having two separate pathfinding modules, an onshore server, and a controller connected using a ROS network. 
                       Our global pathfinding module receives GPS and weather data from our onshore server and generates a global path that is sent to our local pathfinding module.
                       Our local pathfinding module connects our global waypoints and avoids nearby obstacles while adapting to changing wind conditions.
-
+                      <br/>
                       Path planning for a sailboat has its own unique challenges. At first glance it may seem like you could simply draw a straight line from Victoria to Maui.
                       However, there are some major challenges that our system takes into account:
                     </p>
