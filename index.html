@@ -251,9 +251,9 @@
                   <!-- <p class="text-left"> -->
                   <p class=" text-left mb-3 mt-2">
                     I co-designed the Flight Computer PCB which does all the on-board computing on an NXP MK66 32 bit MCU and handles all critical and non-critical tasks
-                    such as fueling, apogee detection, recovery deployment, data acquisition, and engine control. This board acquires essential data directly from our GPS, IMU, and 
+                    such as apogee detection, recovery deployment, data acquisition, and ground station communication. This board acquires essential data directly from our GPS, IMU, and 
                     our battery management system. This board also uses CAN to receive pressure transducer and thermocouple data from our custom CAN module PCBs located in various parts of our rocket
-                    . The board also has an ethernet interface to a Labjack DAQ module which we are hoping will be replaced by our CAN system. We use a combination of buck converters and 
+                    . Essential data will be communicated to a ground staation via radio. The board also has an ethernet interface to a Labjack DAQ module which we are hoping will be replaced by our CAN system. We use a combination of buck converters and 
                     linear regulators to regulate a Li-ion power source into 24V, 5V, and 3V3.
                   </p>
                 <!-- </div> -->
@@ -262,7 +262,7 @@
 
               <p class="text-center">
                 Here is the PCB layout which I designed. The first 3 picture are the 1st, 3rd, and 4th layers of the board. The fourth picture is the 3D model. The fifth picture is the
-                manufactured version which we constructed using a solder reflow oven.
+                manufactured version which we constructed using a solder reflow oven (still some touch ups to be done).
               </p>
               <!-- <div class="col-lg-4 mx-auto"> -->
                 <img class = "img-fluid" src="img/portfolio/pcblayer1.jpg" alt="">
@@ -306,7 +306,7 @@
               </figure>
 
               <p class="text-center">
-            o
+                Radio
               </p>
               <figure>
               <img class = "img-fluid" src="img/portfolio/radio.jpg" alt="">
