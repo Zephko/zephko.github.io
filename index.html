@@ -318,11 +318,37 @@
                   <p>
                     I am fully responsible for the whole design process of our Reaction Control System(RCS) PCB including component selection, schematic capture, and layout. The RCS
                     is designed to control the roll of the rocket by activating cold gas thrusters using solenoid valves. This is accomplished by implementing a feedback loop using an NXP 
-                    microcontroller which reads the angular velocity from an IMU and opens the gas thruster valves using high side switches. Design files and pictures will be uploaded here 
-                    later in the design process!
+                    microcontroller which reads the angular velocity from an IMU and opens the gas thruster valves using high side switches. 
+                  </br/>
+                    This board will also double as our liquid oxygen tank PCB. The board uses ADCs to read thermocouple and pressure transducer data from the tank and outputs it on the CANBUS. 
+        
                   </p>
                 </div>
-            
+              <p class="text-center">
+                Here are some of the key schematics for the RCS. Some of the schematics are common with the FC so I've excluded them:
+              </p>
+
+              <p class="text-center">
+                Pressure
+              </p>
+              <figure>
+              <img class = "img-fluid" src="img/portfolio/RCS-pressure.jpg" alt="">
+              </figure>
+
+              <p class="text-center">
+                Thermocouple
+              </p>
+              <figure>
+              <img class = "img-fluid" src="img/portfolio/RCS-thermocouple.jpg" alt="">
+              </figure>
+
+              <p class="text-center">
+                Valves
+              </p>
+              <figure>
+              <img class = "img-fluid" src="img/portfolio/RCS-valves.jpg" alt="">
+              </figure>
+
               <ul class="list-inline">
                 <li>Last Updated: Oct 2020</li>
               </ul>
